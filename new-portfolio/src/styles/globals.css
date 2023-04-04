@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @layer base {
   * {
-    @apply box-border p-0 m-0;
+    @apply box-border;
   }
 
-  html,
+  html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+  }
+
   body {
-    @apply max-h-screen overflow-x-hidden;
+    @apply max-h-screen overflow-x-hidden bg-[#EFF6EE] tracking-wide;
   }
 
   a {
