@@ -6,7 +6,10 @@ module.exports = {
       keyframes: {
         slideInLeft: {
           "0%": {
-            transform: "translateX(-500px)",
+            transform: "translateX(-800px)",
+          },
+          "90%": {
+            transform: "translateX(30px)",
           },
           "100%": {
             transform: "translateX(0)",
@@ -14,7 +17,10 @@ module.exports = {
         },
         slideInRight: {
           "0%": {
-            transform: "translateX(500px)",
+            transform: "translateX(800px)",
+          },
+          "90%": {
+            transform: "translateX(-30px)",
           },
           "100%": {
             transform: "translateX(0)",
@@ -22,8 +28,8 @@ module.exports = {
         },
       },
       animation: {
-        "slide-in-left": "slideInLeft 1.5s linear",
-        "slide-in-right": "slideInRight 1.5s linear",
+        "slide-in-left": "slideInLeft 1s linear",
+        "slide-in-right": "slideInRight 1s linear",
       },
     },
   },

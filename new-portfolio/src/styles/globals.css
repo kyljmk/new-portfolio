@@ -15,7 +15,7 @@
   }
 
   body {
-    @apply max-h-screen overflow-x-hidden bg-[#EFF6EE] tracking-wide;
+    @apply max-h-screen overflow-x-hidden bg-[#EFF6EE] tracking-wide text-[#383F51];
   }
 
   a {
