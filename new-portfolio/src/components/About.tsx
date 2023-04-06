@@ -6,13 +6,13 @@ function About() {
   return (
     <div className="w-full md:h-screen p-2 flex items-center py-16 text-center">
       <div className="max-w-[1240px] flex flex-col justify-center m-auto md:grid grid-cols-3 gap-8 items-center">
-        <div className="col-span-2 flex flex-col justify-center items-center">
+        <div className="col-span-2 flex flex-col justify-center items-center px-8">
           <p className="uppercase text-xl tracking-widest w-full text-left pl-5 text-[#3C4F76]">
             About
           </p>
           <div className="flex justify-center py-4">
             <div className="absolute bg-[#3C4F76] h-11 w-[210px] self-start rounded-full animate-slide-in-right z-[-1]"></div>
-            <h2 className="text-white py-1">Who I Am</h2>
+            <h2 className="text-[#EFF6EE] py-1">Who I Am</h2>
           </div>
           <p className="py-2 font-bold tracking-widest text-[#A98743]">
             A late bloomer.
