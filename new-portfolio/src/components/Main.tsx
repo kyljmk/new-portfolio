@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
@@ -39,10 +40,24 @@ function Main() {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-[#3c4f76] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn size="" />
+              <Link
+                href={
+                  "https://www.linkedin.com/in/kyle-manson-kullin-34a933242/"
+                }
+                rel="noopener noreferrer"
+                target={"_blank"}
+              >
+                <FaLinkedinIn size="" />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-[#3c4f76] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <VscGithub />
+              <Link
+                href={"https://www.github.com/kyljmk"}
+                rel="noopener noreferrer"
+                target={"_blank"}
+              >
+                <VscGithub />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-[#3c4f76] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <FiMail />
