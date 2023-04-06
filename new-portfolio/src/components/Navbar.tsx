@@ -20,14 +20,14 @@ function Navbar() {
   return (
     <div className="fixed w-full bg-[#EFF6EE] h-20 shadow-xl z-[100] ease-in duration-300">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="flex rounded-full border-2 border-[#3C4F76]">
-          <div className="bg-[#3C4F76] rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+        <div className="flex rounded-full border-2 border-[#A98743] bg-[#3C4F76]">
+          <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
             k
           </div>
-          <div className=" border-[#3C4F76] bg-[#EFF6EE] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+          <div className="bg-[#EFF6EE] rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
             m
           </div>
-          <div className="bg-[#3C4F76] rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+          <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
             k
           </div>
         </div>
@@ -71,14 +71,14 @@ function Navbar() {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <div className="flex rounded-full border-2 border-[#3C4F76]">
-              <div className="bg-[#3C4F76] rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+            <div className="flex rounded-full border-2 border-[#A98743] bg-[#3C4F76]">
+              <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
                 k
               </div>
-              <div className=" border-[#3C4F76] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+              <div className="bg-[#EFF6EE] rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
                 m
               </div>
-              <div className="bg-[#3C4F76] rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+              <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
                 k
               </div>
             </div>

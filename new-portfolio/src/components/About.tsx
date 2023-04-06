@@ -1,20 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import LaptopImage from ".//../../public/assets/laptop.jpg";
+import Kmk from ".//../../public/assets/kmk.png";
 
 function About() {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#3C4F76]">
+    <div className="w-full md:h-screen p-2 flex items-center py-16 text-center">
+      <div className="max-w-[1240px] flex flex-col justify-center m-auto md:grid grid-cols-3 gap-8 items-center">
+        <div className="col-span-2 flex flex-col justify-center items-center">
+          <p className="uppercase text-xl tracking-widest w-full text-left pl-5 text-[#3C4F76]">
             About
           </p>
-          <div className="py-4">
-            <div className="absolute bg-[#3C4F76] h-11 w-[200px] self-start rounded-full animate-slide-in-right"></div>
-            <h2 className="text-[#3C4F76]">Who I Am</h2>
+          <div className="flex justify-center py-4">
+            <div className="absolute bg-[#3C4F76] h-11 w-[210px] self-start rounded-full animate-slide-in-right z-[-1]"></div>
+            <h2 className="text-white py-1">Who I Am</h2>
           </div>
-          <p className="py-2">A late bloomer.</p>
+          <p className="py-2 font-bold tracking-widest text-[#A98743]">
+            A late bloomer.
+          </p>
           <p className="py-2">
             I was born in South Africa, raised in England, and until the age of
             30 I worked in bars and restaurants across Europe. I've always had
@@ -35,15 +37,19 @@ function About() {
             my personal projects are largely focus on the front end of web
             development.
           </p>
-          <p className="py-2">Check out some of my latest projects!</p>
+          <div className="flex justify-center">
+            <p className="my-2 px-4 py-3 font-bold text-[#A98743] shadow-[#AB9F9D] shadow-lg cursor-pointer hover:scale-105 ease-in duration-200 rounded-full">
+              Check out some of my latest projects!
+            </p>
+          </div>
         </div>
-        <div className="border-2 border-black">
+        <div className="flex justify-center shadow-lg shadow-[#AB9F9D] rounded-full p-2 hover:scale-105 ease-in duration-200">
           <Image
-            src={LaptopImage}
+            src={Kmk}
             alt="stock image of a laptop"
-            width={600}
+            width={400}
             height={400}
-            className="border-[#3C4F76] border-[1px] rounded-2xl"
+            className="rounded-full"
           />
         </div>
       </div>

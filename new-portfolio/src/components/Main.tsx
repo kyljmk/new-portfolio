@@ -39,7 +39,7 @@ function Main() {
             NextJS, React Native, ExpressJS, Firebase and TailwindCSS.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-[#3c4f76] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link
                 href={
                   "https://www.linkedin.com/in/kyle-manson-kullin-34a933242/"
@@ -50,7 +50,7 @@ function Main() {
                 <FaLinkedinIn size="" />
               </Link>
             </div>
-            <div className="rounded-full shadow-lg shadow-[#3c4f76] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link
                 href={"https://www.github.com/kyljmk"}
                 rel="noopener noreferrer"
@@ -59,10 +59,10 @@ function Main() {
                 <VscGithub />
               </Link>
             </div>
-            <div className="rounded-full shadow-lg shadow-[#3c4f76] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <FiMail />
             </div>
-            <div className="rounded-full shadow-lg shadow-[#3c4f76] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <BsPersonLinesFill />
             </div>
           </div>
