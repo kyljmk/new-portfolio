@@ -9,12 +9,24 @@ function Skills() {
       image: "csharp.png",
     },
     {
+      name: "JavaScript",
+      image: "javascript.png",
+    },
+    {
+      name: "TypeScript",
+      image: "typescript.png",
+    },
+    {
       name: "HTML",
       image: "html.png",
     },
     {
       name: "CSS",
       image: "css.png",
+    },
+    {
+      name: "Tailwind",
+      image: "tailwind.png",
     },
     {
       name: ".NET",
@@ -36,7 +48,7 @@ function Skills() {
 
   const skillElements = skillsArray.map((skill: ISkill) => {
     return (
-      <div className="p-6 max-w-[300px] shadow-lg shadow-[#AB9F9D] rounded-xl hover:scale-105 ease-in duration-200">
+      <div className="p-6 max-w-[300px] shadow-lg flex justify-center items-center shadow-[#AB9F9D] rounded-xl hover:scale-105 ease-in duration-200">
         <div className="grid grid-cols-2 gap-4 justify-center items-center">
           <div className="m-auto">
             <Image
@@ -61,8 +73,8 @@ function Skills() {
           Skills
         </p>
         <div>
-          <div className="absolute bg-[#3C4F76] h-11 w-[240px] rounded-full z-[-1] mt-[10px] ml-[-15px] animate-slide-in-left"></div>
-          <h2 className="py-4 text-[#EFF6EE]">What I Can Do</h2>
+          <div className="absolute bg-[#3C4F76] h-11 w-[240px] sm:w-[280px] sm:h-12 rounded-full z-[-1] mt-[18px] ml-[-15px] animate-slide-in-left"></div>
+          <h2 className="py-6 text-[#EFF6EE]">What I Can Do</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-5">
           {skillElements}

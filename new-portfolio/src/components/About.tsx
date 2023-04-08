@@ -5,8 +5,8 @@ import Kmk from ".//../../public/assets/kmk.png";
 function About() {
   return (
     <div className="w-full md:h-screen p-2 flex items-center py-16 text-center">
-      <div className="max-w-[1240px] flex flex-col justify-center m-auto md:grid grid-cols-3 gap-8 items-center">
-        <div className="col-span-2 flex flex-col justify-center items-center px-8">
+      <div className="max-w-[1240px] flex flex-col justify-center m-auto md:grid grid-cols-3 gap-8 items-center px-8">
+        <div className="col-span-2 flex flex-col justify-center items-center">
           <p className="uppercase text-xl tracking-widest w-full text-left pl-5 text-[#3C4F76]">
             About
           </p>
