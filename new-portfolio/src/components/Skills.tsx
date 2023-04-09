@@ -1,48 +1,58 @@
 import React from "react";
 import Image from "next/image";
 import { ISkill } from "@/Types";
+import CSharp from "../../public/assets/csharp.png";
+import JS from "../../public/assets/javascript.png";
+import TS from "../../public/assets/typescript.png";
+import Html from "../../public/assets/html.png";
+import Css from "../../public/assets/css.png";
+import Tailwind from "../../public/assets/tailwind.png";
+import Net from "../../public/assets/net.png";
+import ReactLogo from "../../public/assets/react.png";
+import Github from "../../public/assets/github.png";
+import Sql from "../../public/assets/sqlserver.png";
 
 function Skills() {
   const skillsArray: ISkill[] = [
     {
       name: "C#",
-      image: "csharp.png",
+      image: CSharp,
     },
     {
       name: "JavaScript",
-      image: "javascript.png",
+      image: JS,
     },
     {
       name: "TypeScript",
-      image: "typescript.png",
+      image: TS,
     },
     {
       name: "HTML",
-      image: "html.png",
+      image: Html,
     },
     {
       name: "CSS",
-      image: "css.png",
+      image: Css,
     },
     {
       name: "Tailwind",
-      image: "tailwind.png",
+      image: Tailwind,
     },
     {
       name: ".NET",
-      image: "net.png",
+      image: Net,
     },
     {
       name: "React",
-      image: "react.png",
+      image: ReactLogo,
     },
     {
       name: "GitHub",
-      image: "github.png",
+      image: Github,
     },
     {
       name: "SQL Server",
-      image: "sqlserver.png",
+      image: Sql,
     },
   ];
 
@@ -51,12 +61,7 @@ function Skills() {
       <div className="p-6 max-w-[300px] shadow-lg flex justify-center items-center shadow-[#AB9F9D] rounded-xl hover:scale-105 ease-in duration-200">
         <div className="grid grid-cols-2 gap-4 justify-center items-center">
           <div className="m-auto">
-            <Image
-              src={`/../public/assets/${skill.image}`}
-              alt=""
-              width={64}
-              height={64}
-            />
+            <Image src={skill.image} alt="" width={64} height={64} />
           </div>
           <div className="flex flex-col items-center justify-center">
             <h3>{skill.name}</h3>
@@ -78,6 +83,7 @@ function Skills() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-5">
           {skillElements}
+          <h2>hello</h2>
         </div>
       </div>
     </div>

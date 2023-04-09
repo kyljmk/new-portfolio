@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface ISkill {
   name: string;
-  image: string;
+  image: StaticImageData;
 }
 
 export interface IProjectProps {
