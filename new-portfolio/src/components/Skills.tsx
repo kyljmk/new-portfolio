@@ -74,7 +74,7 @@ function Skills() {
   return (
     <div className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-center h-full px-5">
-        <p className="text-xl tracking-widest uppercase text-[#3C4F76]">
+        <p className="text-xl tracking-widest uppercase text-[#3C4F76] self-start">
           Skills
         </p>
         <div>
@@ -83,7 +83,6 @@ function Skills() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 px-5">
           {skillElements}
-          <h2>hello</h2>
         </div>
       </div>
     </div>

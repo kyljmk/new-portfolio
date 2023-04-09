@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Kmk from ".//../../public/assets/kmk.png";
+import { useInView } from "react-intersection-observer";
 
 function About() {
   return (
