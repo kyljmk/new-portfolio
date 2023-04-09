@@ -24,7 +24,7 @@ function Navbar() {
           <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
             k
           </div>
-          <div className="bg-[#EFF6EE] rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+          <div className="bg-[#EFF6EE] border-[#A98743] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
             m
           </div>
           <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
@@ -75,7 +75,7 @@ function Navbar() {
               <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
                 k
               </div>
-              <div className="bg-[#EFF6EE] rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+              <div className="bg-[#EFF6EE] border-[#A98743] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
                 m
               </div>
               <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">

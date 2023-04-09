@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import GTImage from "../../public/assets/goaltrackSS.png";
+import Link from "next/link";
+import ProjectItem from "./ProjectItem";
 
 function Projects() {
   return (
@@ -12,7 +16,11 @@ function Projects() {
           <h2 className="py-4 text-[#EFF6EE]">What I've Built</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-[#AB9F9D] rounded-xl p-4 group hover:bg-gradient-to-r from-[#3C4F76] to-[#383F51]"></div>
+          <ProjectItem
+            title="GoalTrack"
+            image={GTImage}
+            projectUrl="https://goaltrack.live"
+          />
         </div>
       </div>
     </div>
