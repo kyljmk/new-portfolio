@@ -27,8 +27,11 @@ function Main() {
             <h1 className="text-[#EFF6EE] tracking-widest py-1">
               Manson&#8209;Kullin
             </h1>
-            <h1 className="tracking-widest py-1">I'm a full stack</h1>
-            <h1 className="tracking-widest py-1">developer.</h1>
+            <h1 className="tracking-widest py-1">
+              I'm a full stack
+              <br />
+              developer.
+            </h1>
           </div>
           <p className="py-4 max-w-[80%] m-auto tracking-wider">
             I am a hard-working and curious full stack developer with
