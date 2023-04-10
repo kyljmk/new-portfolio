@@ -72,7 +72,7 @@ function Skills() {
   });
 
   return (
-    <div className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-center h-full px-5">
         <p className="text-xl tracking-widest uppercase text-[#3C4F76] self-start">
           Skills

@@ -23,7 +23,6 @@ export default function Home() {
         <link rel="icon" href="/kicon.ico" />
       </Head>
       <main>
-        <Navbar />
         <Main />
         <About />
         <Skills />

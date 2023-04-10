@@ -8,7 +8,7 @@ import { VscGithub } from "react-icons/vsc";
 
 function Main() {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto pt-32 sm:pt-20 p-4 flex justify-center items-center">
         <div className="text-[#383F51]">
           <p className="text-sm tracking-widest pb-5">
@@ -42,29 +42,29 @@ function Main() {
             NextJS, React Native, ExpressJS, Firebase and TailwindCSS.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link
-                href={
-                  "https://www.linkedin.com/in/kyle-manson-kullin-34a933242/"
-                }
-                rel="noopener noreferrer"
-                target={"_blank"}
-              >
+            <Link
+              href={"https://www.linkedin.com/in/kyle-manson-kullin-34a933242/"}
+              rel="noopener noreferrer"
+              target={"_blank"}
+            >
+              <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn size="" />
-              </Link>
-            </div>
-            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link
-                href={"https://www.github.com/kyljmk"}
-                rel="noopener noreferrer"
-                target={"_blank"}
-              >
+              </div>
+            </Link>
+            <Link
+              href={"https://www.github.com/kyljmk"}
+              rel="noopener noreferrer"
+              target={"_blank"}
+            >
+              <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <VscGithub />
-              </Link>
-            </div>
-            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FiMail />
-            </div>
+              </div>
+            </Link>
+            <Link href={"mailto:k.mansonkullin@googlemail.com"}>
+              <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FiMail />
+              </div>
+            </Link>
             <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <BsPersonLinesFill />
             </div>

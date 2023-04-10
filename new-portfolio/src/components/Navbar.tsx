@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -12,42 +12,62 @@ import { BsPersonLinesFill } from "react-icons/bs";
 
 function Navbar() {
   const [nav, setNav] = useState<boolean>(false);
+  const [shadow, setShadow] = useState<boolean>(false);
 
   const handleNav = () => {
     setNav((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 5) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <div className="fixed w-full bg-[#EFF6EE] h-20 shadow-xl z-[100] ease-in duration-300">
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="flex rounded-full border-2 border-[#A98743] bg-[#3C4F76]">
-          <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
-            k
+        <Link href={"/#home"} scroll={false}>
+          <div className="flex rounded-full border-2 border-[#A98743] bg-[#3C4F76] cursor-pointer">
+            <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+              k
+            </div>
+            <div className="bg-[#EFF6EE] border-[#A98743] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+              m
+            </div>
+            <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+              k
+            </div>
           </div>
-          <div className="bg-[#EFF6EE] border-[#A98743] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
-            m
-          </div>
-          <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
-            k
-          </div>
-        </div>
+        </Link>
         <div>
           <ul className="hidden text md:flex">
-            <Link href="/">
+            <Link href="/#home" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:border-b">
-                Project
+                Projects
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -71,17 +91,19 @@ function Navbar() {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <div className="flex rounded-full border-2 border-[#A98743] bg-[#3C4F76]">
-              <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
-                k
+            <Link href={"/#home"}>
+              <div className="flex rounded-full border-2 border-[#A98743] bg-[#3C4F76] cursor-pointer">
+                <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+                  k
+                </div>
+                <div className="bg-[#EFF6EE] border-[#A98743] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+                  m
+                </div>
+                <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
+                  k
+                </div>
               </div>
-              <div className="bg-[#EFF6EE] border-[#A98743] border-2 rounded-full text-[#3C4F76] font-bold w-10 h-10 flex items-center justify-center text-2xl">
-                m
-              </div>
-              <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
-                k
-              </div>
-            </div>
+            </Link>
             <div
               className="rounded-full shadow-lg shadow-[#3C4F76] p-3 cursor-pointer"
               onClick={handleNav}
@@ -96,19 +118,49 @@ function Navbar() {
           </div>
           <div className="py-4 flex flex-col">
             <ul>
-              <Link href="/">
+              <Link
+                onClick={() => {
+                  setNav(false);
+                }}
+                href="/#home"
+                scroll={false}
+              >
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+              <Link
+                onClick={() => {
+                  setNav(false);
+                }}
+                href="/#about"
+                scroll={false}
+              >
+                <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link
+                onClick={() => {
+                  setNav(false);
+                }}
+                href="/#projects"
+                scroll={false}
+              >
                 <li className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
+              <Link
+                onClick={() => {
+                  setNav(false);
+                }}
+                href="/#skills"
+                scroll={false}
+              >
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link
+                onClick={() => {
+                  setNav(false);
+                }}
+                href="/#contact"
+                scroll={false}
+              >
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>

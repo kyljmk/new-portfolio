@@ -14,7 +14,7 @@ function ProjectItem({ title, image, projectUrl }: IProjectProps) {
       <div className="hidden group-hover:block absolute border-[#EFF6EE] border-4 text-[#EFF6EE] rounded-3xl p-12">
         <h3 className="text-2xl text-center tracking-wider">{title}</h3>
         <p className="pb-4 pt-2 text-center">ReactJS</p>
-        <Link href={projectUrl} rel="noopener noreferrer" target={"_blank"}>
+        <Link href={`${projectUrl}?project=goaltrack`}>
           <p className="text-center py-3 rounded-full bg-[#EFF6EE] text-[#A98743] font-bold text-lg cursor-pointer">
             More Info
           </p>

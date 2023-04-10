@@ -10,7 +10,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 function Contact() {
   return (
-    <div className="w-full md:h-screen">
+    <div id="contact" className="w-full md:h-screen">
       <div className="max-w-[1240px] m-auto px-10 py-16 w-full flex flex-col">
         <p className="text-xl tracking-widest uppercase text-[#3C4F76]">
           Contact
@@ -122,7 +122,7 @@ function Contact() {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="/">
+          <Link href="/#home" scroll={false}>
             <div className="rounded-full text-[#3C4F76] shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp size={30} />
             </div>
