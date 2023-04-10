@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Kmk from ".//../../public/assets/kmk.png";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 function About() {
   return (
@@ -41,16 +42,18 @@ function About() {
             my personal projects are largely focus on the front end of web
             development.
           </p>
-          <div className="flex justify-center">
-            <p className="my-2 px-4 py-3 font-bold text-[#A98743] shadow-[#AB9F9D] shadow-lg cursor-pointer hover:scale-105 ease-in duration-200 rounded-full">
-              Check out some of my latest projects!
-            </p>
-          </div>
+          <Link href={"/#projects"}>
+            <div className="flex justify-center">
+              <p className="my-2 px-4 py-3 font-bold text-[#A98743] shadow-[#AB9F9D] shadow-lg cursor-pointer hover:scale-105 ease-in duration-200 rounded-full">
+                Check out some of my latest projects!
+              </p>
+            </div>
+          </Link>
         </div>
         <div className="flex justify-center shadow-lg shadow-[#AB9F9D] rounded-full p-2 hover:scale-105 ease-in duration-200">
           <Image
             src={Kmk}
-            alt="stock image of a laptop"
+            alt="kyl manson-kullin"
             width={400}
             height={400}
             className="rounded-full"

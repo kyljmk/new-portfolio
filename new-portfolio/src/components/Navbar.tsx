@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import {
   AiOutlineClose,
@@ -9,10 +8,24 @@ import {
 import { VscGithub } from "react-icons/vsc";
 import { FiMail } from "react-icons/fi";
 import { BsPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [nav, setNav] = useState<boolean>(false);
   const [shadow, setShadow] = useState<boolean>(false);
+  const [navBg, setNavBg] = useState<string>("#EFF6EE");
+  const [linkColor, setLinkColor] = useState<string>("#3C4F76");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath === "/goaltrack") {
+      setNavBg("transparent");
+      setLinkColor("#EFF6EE");
+    } else {
+      setNavBg("#EFF6EE");
+      setLinkColor("#3C4F76");
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav((prev) => !prev);
@@ -31,6 +44,7 @@ function Navbar() {
 
   return (
     <div
+      style={{ background: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -52,7 +66,7 @@ function Navbar() {
           </div>
         </Link>
         <div>
-          <ul className="hidden text md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden text md:flex">
             <Link href="/#home" scroll={false}>
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -73,7 +87,11 @@ function Navbar() {
               </li>
             </Link>
           </ul>
-          <div className="cursor-pointer md:hidden" onClick={handleNav}>
+          <div
+            style={{ color: `${linkColor}` }}
+            className="cursor-pointer md:hidden"
+            onClick={handleNav}
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
@@ -90,7 +108,7 @@ function Navbar() {
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
-          <div className="flex w-full items-center justify-between">
+          <div className=" border-b-2 border-l-2 rounded-3xl p-4 pr-5 border-[#3C4F76] flex w-full items-center justify-between">
             <Link href={"/#home"}>
               <div className="flex rounded-full border-2 border-[#A98743] bg-[#3C4F76] cursor-pointer">
                 <div className="bg-[#3C4F76] border-2 rounded-full text-[#EFF6EE] font-bold w-10 h-10 flex items-center justify-center text-2xl">
@@ -105,17 +123,13 @@ function Navbar() {
               </div>
             </Link>
             <div
-              className="rounded-full shadow-lg shadow-[#3C4F76] p-3 cursor-pointer"
+              className="rounded-full shadow-lg shadow-[#3C4F76] p-2 cursor-pointer"
               onClick={handleNav}
             >
               <AiOutlineClose />
             </div>
           </div>
-          <div className="border-b border-[#3c4f76]/50 mt-3">
-            <p className="w-[85%] md:w-[90%] py-4">
-              Enter programing saying here
-            </p>
-          </div>
+
           <div className="py-4 flex flex-col">
             <ul>
               <Link
@@ -169,18 +183,36 @@ function Navbar() {
                 Let's connect
               </p>
               <div className="flex items-center justify-between py-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineLinkedin />
-                </div>
-                <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <VscGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FiMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsPersonLinesFill />
-                </div>
+                <Link
+                  href={
+                    "https://www.linkedin.com/in/kyle-manson-kullin-34a933242/"
+                  }
+                  rel="noopener noreferrer"
+                  target={"_blank"}
+                >
+                  <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineLinkedin />
+                  </div>
+                </Link>
+                <Link
+                  href={"https://www.github.com/kyljmk"}
+                  rel="noopener noreferrer"
+                  target={"_blank"}
+                >
+                  <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <VscGithub />
+                  </div>
+                </Link>
+                <Link href={"malto:k.mansonkullin@googlemail.com"}>
+                  <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FiMail />
+                  </div>
+                </Link>
+                <Link href={"/#contact"}>
+                  <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <BsPersonLinesFill />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

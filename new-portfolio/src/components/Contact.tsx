@@ -38,7 +38,7 @@ function Contact() {
               </div>
               <div>
                 <p className="uppercase pt-8">Connect with me</p>
-                <div className="flex items-center justify-between py-4">
+                <div className="flex items-center justify-around py-4">
                   <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <Link
                       href={
@@ -59,12 +59,11 @@ function Contact() {
                       <VscGithub />
                     </Link>
                   </div>
-                  <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FiMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsPersonLinesFill />
-                  </div>
+                  <Link href={"mailto:k.mansonkullin@googlemail.com"}>
+                    <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FiMail />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -65,9 +65,11 @@ function Main() {
                 <FiMail />
               </div>
             </Link>
-            <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsPersonLinesFill />
-            </div>
+            <Link href={"/#contact"}>
+              <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <BsPersonLinesFill />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

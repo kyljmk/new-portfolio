@@ -41,6 +41,6 @@
   }
 
   button {
-    @apply shadow-xl shadow-[#AB9F9D] rounded-3xl uppercase bg-[#A98743] text-white px-4 py-3;
+    @apply shadow-xl shadow-[#AB9F9D] rounded-3xl bg-[#A98743] font-bold text-white px-4 py-3;
   }
 }
