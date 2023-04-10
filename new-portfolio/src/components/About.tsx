@@ -42,7 +42,7 @@ function About() {
             my personal projects are largely focus on the front end of web
             development.
           </p>
-          <Link href={"/#projects"}>
+          <Link href={"/#projects"} scroll={false}>
             <div className="flex justify-center">
               <p className="my-2 px-4 py-3 font-bold text-[#A98743] shadow-[#AB9F9D] shadow-lg cursor-pointer hover:scale-105 ease-in duration-200 rounded-full">
                 Check out some of my latest projects!
