@@ -23,13 +23,19 @@ function goaltrack() {
       </div>
       <div className="max-w-[1240px] mx-auto p-5 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p>Project</p>
-          <h2>Overview</h2>
+          <p className="tracking-widest uppercase">Project</p>
+          <h2 className="py-2 text-[#3C4F76] tracking-widest">Overview</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque aut
-            earum voluptatum sapiente dolore doloremque voluptas quis pariatur
-            iste! Asperiores iusto ipsa totam libero magni tempore assumenda
-            reprehenderit recusandae laboriosam.
+            GoalTrack is an up-to-date and functional web app that provides live
+            scores, fixtures, results and statistics from all professional teams
+            and leagues around the world. The app is written in TypeScript
+            through the ReactJS library, and makes use of the FOOTBALL-API found
+            via RapidAPI. The biggest challenge I face while creating GoalTrack
+            was deciding on the optimal way to call daily fixtures from the API,
+            and the biggest break-through moment came when I figured out how to
+            fetch data for multiple days at once and then created my own
+            date-range-picker for users to browse the current weeks fixtures and
+            results.
           </p>
           <Link
             href={"https://goaltrack.live"}
