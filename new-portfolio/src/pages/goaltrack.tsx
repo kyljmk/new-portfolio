@@ -30,12 +30,12 @@ function goaltrack() {
             scores, fixtures, results and statistics from all professional teams
             and leagues around the world. The app is written in TypeScript
             through the ReactJS library, and makes use of the FOOTBALL-API found
-            via RapidAPI. The biggest challenge I face while creating GoalTrack
+            via RapidAPI. The biggest challenge I faced while creating GoalTrack
             was deciding on the optimal way to call daily fixtures from the API,
             and the biggest break-through moment came when I figured out how to
-            fetch data for multiple days at once and then created my own
+            fetch data for multiple days at once and then create my own
             date-range-picker for users to browse the current weeks fixtures and
-            results.
+            results by day.
           </p>
           <Link
             href={"https://goaltrack.live"}
