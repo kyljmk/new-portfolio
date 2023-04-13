@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import GTImage from "../../public/assets/goaltrackSS.png";
-import Link from "next/link";
+import TCImage from "../../public/assets/tinder-clone.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
@@ -20,6 +19,13 @@ function Projects() {
             title="GoalTrack"
             image={GTImage}
             projectUrl="/goaltrack"
+            tech="ReactJS"
+          />
+          <ProjectItem
+            title="Tinder Clone"
+            image={TCImage}
+            projectUrl="/tinderclone"
+            tech="React Native"
           />
         </div>
       </div>

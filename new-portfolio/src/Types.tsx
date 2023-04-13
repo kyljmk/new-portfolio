@@ -9,4 +9,5 @@ export interface IProjectProps {
   title: string;
   image: StaticImageData;
   projectUrl: string;
+  tech: string;
 }
