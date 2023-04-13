@@ -17,22 +17,19 @@ export default function Home() {
         <title>Kyle Manson-Kullin</title>
         <meta
           name="description"
-          content="Portfolio of full stack developer Kyle Manson-Kullin"
+          content="This is the portfolio of full stack developer Kyle Manson-Kullin, here you can find more information about himself, the technologies he uses and his most recent projects."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/kicon.ico" />
         <meta property="og:title" content="Kyle Manson-Kullin" />
 
         <meta
+          name="description"
           property="og:description"
           content="Portfolio of full stack developer Kyle Manson-Kullin"
         />
-        <meta
-          prefix="og: http://ogp.me/ns#"
-          property="og:image"
-          content="https://kjmk.vercel.app/public/kicon.ico"
-        ></meta>
-        <meta property="og:image" content="/kicon.ico" />
+
+        <meta name="image" property="og:image" content="/kicon.ico" />
         <meta property="og:url" content="kjmk.vercel.app" />
         <meta property="og:site_name" content="Kyle Manson-Kullin" />
         <meta property="og:locale" content="en_US" />
