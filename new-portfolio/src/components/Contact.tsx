@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
 import { FiMail } from "react-icons/fi";
-import { BsPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 function Contact() {
@@ -15,7 +14,10 @@ function Contact() {
         <p className="text-xl tracking-widest uppercase text-[#3C4F76]">
           Contact
         </p>
-        <h2 className="py-4 self-center">Get In Touch</h2>
+        <div className="flex justify-center pb-4">
+          <div className="absolute mt-[11px] h-12 w-[290px] bg-[#3C4F76] rounded-full z-[-1] animate-slide-in-right"></div>
+          <h2 className="py-4 self-center text-[#EFF6EE]">Get In Touch</h2>
+        </div>
         <div className="grid md:grid-cols-5 gap-8">
           <div className="col-span-3 md:col-span-2 w-full h-full shadow-xl shadow-[#AB9F9D] rounded-3xl p-4">
             <div className="h-full flex flex-col justify-between">
@@ -69,8 +71,13 @@ function Contact() {
             </div>
           </div>
 
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-[#AB9F9D] rounded-3xl lg:p-4">
-            <div className="p-4">
+          <div className="col-span-3 relative w-full h-auto shadow-xl shadow-[#AB9F9D] rounded-3xl ">
+            <div className="absolute rounded-3xl bg-[#AB9F9D]/40 h-[100%] w-[100%] flex items-center justify-center">
+              <span className="border-4 bg-[#EFF6EE] text-sm sm:text-base border-[#3C4F76] text-[#3C4F76] font-bold p-4 rounded-full z-10">
+                This feature will be available soon!
+              </span>
+            </div>
+            <div className="p-4 lg:p-8 opacity-40">
               <form>
                 <div className="grid sm:grid-cols-2 gap-4 w-full pb-3">
                   <div className="flex flex-col">
