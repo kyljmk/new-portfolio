@@ -21,6 +21,20 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/kicon.ico" />
+        <meta property="og:title" content="GoalTrack" />
+
+        <meta
+          property="og:description"
+          content="Live football results up-to-the-minute"
+        />
+
+        <meta property="og:image" content="%PUBLIC_URL%/logo-icon.png" />
+        <meta property="og:url" content="goaltrack.live" />
+        <meta property="og:site_name" content="GoalTrack" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-icon.png" />
       </Head>
       <main>
         <Main />
