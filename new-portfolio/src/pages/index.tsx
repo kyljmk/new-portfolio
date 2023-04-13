@@ -21,20 +21,24 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/kicon.ico" />
-        <meta property="og:title" content="GoalTrack" />
+        <meta property="og:title" content="Kyle Manson-Kullin" />
 
         <meta
           property="og:description"
-          content="Live football results up-to-the-minute"
+          content="Portfolio of full stack developer Kyle Manson-Kullin"
         />
-
-        <meta property="og:image" content="%PUBLIC_URL%/logo-icon.png" />
-        <meta property="og:url" content="goaltrack.live" />
-        <meta property="og:site_name" content="GoalTrack" />
+        <meta
+          prefix="og: http://ogp.me/ns#"
+          property="og:image"
+          content="https://kjmk.vercel.app/public/kicon.ico"
+        ></meta>
+        <meta property="og:image" content="/kicon.ico" />
+        <meta property="og:url" content="kjmk.vercel.app" />
+        <meta property="og:site_name" content="Kyle Manson-Kullin" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="Portfolio" />
         <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-icon.png" />
+        <link rel="apple-touch-icon" href="/kicon.ico" />
       </Head>
       <main>
         <Main />
