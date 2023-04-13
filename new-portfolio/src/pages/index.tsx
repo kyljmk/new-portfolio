@@ -29,11 +29,7 @@ export default function Home() {
           content="This is the portfolio of full stack developer Kyle Manson-Kullin, here you can find more information about himself, the technologies he uses and his most recent projects."
         />
 
-        <meta
-          name="image"
-          property="og:image"
-          content="%PUBLIC_URL%/logo-icon.png"
-        />
+        <meta name="image" property="og:image" content="/logo-icon.png" />
         <meta property="og:url" content="kjmk.vercel.app" />
         <meta property="og:site_name" content="Kyle Manson-Kullin" />
         <meta property="og:locale" content="en_US" />
