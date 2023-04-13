@@ -26,10 +26,14 @@ export default function Home() {
         <meta
           name="description"
           property="og:description"
-          content="Portfolio of full stack developer Kyle Manson-Kullin"
+          content="This is the portfolio of full stack developer Kyle Manson-Kullin, here you can find more information about himself, the technologies he uses and his most recent projects."
         />
 
-        <meta name="image" property="og:image" content="/kicon.ico" />
+        <meta
+          name="image"
+          property="og:image"
+          content="%PUBLIC_URL%/logo-icon.png"
+        />
         <meta property="og:url" content="kjmk.vercel.app" />
         <meta property="og:site_name" content="Kyle Manson-Kullin" />
         <meta property="og:locale" content="en_US" />
