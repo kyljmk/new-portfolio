@@ -10,7 +10,7 @@ function ProjectItem({ title, image, projectUrl, tech }: IProjectProps) {
         className="rounded-3xl group-hover:opacity-10"
         src={image}
         alt="/"
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", height: "100%" }}
       />
       <div className="hidden group-hover:block absolute border-[#EFF6EE] border-4 text-[#EFF6EE] rounded-3xl p-8 sm:p-12">
         <h3 className="text-2xl text-center tracking-wider">{title}</h3>

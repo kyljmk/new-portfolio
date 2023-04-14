@@ -208,7 +208,13 @@ function Navbar() {
                     <FiMail />
                   </div>
                 </Link>
-                <Link href={"/#contact"}>
+                <Link
+                  href={"/#contact"}
+                  scroll={false}
+                  onClick={() => {
+                    setNav(false);
+                  }}
+                >
                   <div className="rounded-full shadow-lg shadow-[#3c4f76] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <BsPersonLinesFill />
                   </div>

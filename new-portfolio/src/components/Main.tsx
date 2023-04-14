@@ -65,7 +65,7 @@ function Main() {
                 <FiMail />
               </div>
             </Link>
-            <Link href={"/#contact"}>
+            <Link href={"/#contact"} scroll={false}>
               <div className="rounded-full shadow-lg shadow-[#AB9F9D] p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsPersonLinesFill />
               </div>
