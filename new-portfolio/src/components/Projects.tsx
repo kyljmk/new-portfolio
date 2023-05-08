@@ -1,6 +1,7 @@
 import React from "react";
 import GTImage from "../../public/assets/goaltrackSS.png";
 import TCImage from "../../public/assets/tinder-clone.png";
+import ECImage from "../../public/assets/kmkzon.png";
 import ProjectItem from "./ProjectItem";
 
 function Projects() {
@@ -26,6 +27,12 @@ function Projects() {
             image={TCImage}
             projectUrl="/tinderclone"
             tech="React Native"
+          />
+          <ProjectItem
+            title="Amazon Clone"
+            image={ECImage}
+            projectUrl="/amazonclone"
+            tech="NextJS"
           />
         </div>
       </div>
